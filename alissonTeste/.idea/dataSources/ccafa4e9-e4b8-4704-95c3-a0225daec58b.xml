@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - testeMega@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="testeMega">
+      <object-id>56611</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="postgres">
+      <object-id>12135</object-id>
+    </database>
+    <database id="3" name="interneta">
+      <object-id>16430</object-id>
+    </database>
+    <database id="4" name="Aula 06 - FBD">
+      <object-id>16621</object-id>
+    </database>
+    <database id="5" name="interneta_projeto">
+      <object-id>24813</object-id>
+    </database>
+    <database id="6" name="Trabalho 1 - FBD">
+      <object-id>26134</object-id>
+    </database>
+    <database id="7" name="Aula 09 - FBD - Gatilhos 1">
+      <object-id>34920</object-id>
+    </database>
+    <database id="8" name="Trabalho 2 - FBD">
+      <object-id>35141</object-id>
+    </database>
+    <database id="9" name="Teste Segunda Avaliação">
+      <object-id>35608</object-id>
+    </database>
+    <database id="10" name="Teste Segunda Avaliação2">
+      <object-id>35784</object-id>
+    </database>
+    <database id="11" name="Revisão Banco">
+      <object-id>36496</object-id>
+    </database>
+    <database id="12" name="internetb">
+      <object-id>36567</object-id>
+    </database>
+    <database id="13" name="internetb_prova">
+      <object-id>36845</object-id>
+    </database>
+    <database id="14" name="Revisão-GerênciaBD">
+      <object-id>36886</object-id>
+    </database>
+    <database id="15" name="Trabalho 2 - PGBD">
+      <object-id>37115</object-id>
+    </database>
+    <database id="16" name="prova1">
+      <object-id>37729</object-id>
+    </database>
+    <database id="17" name="internetb_aplicacao">
+      <object-id>40027</object-id>
+    </database>
+    <database id="18" name="Teste - Prova2 - PGBD">
+      <object-id>40145</object-id>
+    </database>
+    <database id="19" name="Trabalho Inteligência de Negócios - ER">
+      <object-id>40171</object-id>
+    </database>
+    <database id="20" name="seguranca">
+      <object-id>48902</object-id>
+    </database>
+    <database id="21" name="alissonLab-Hotel">
+      <object-id>49217</object-id>
+    </database>
+    <database id="22" name="alissonLab-Hotel2">
+      <object-id>49344</object-id>
+    </database>
+    <database id="23" name="segurancaBlog">
+      <object-id>49479</object-id>
+    </database>
+    <database id="24" name="avaliacaoMega">
+      <object-id>56555</object-id>
+    </database>
+    <schema id="25" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>7078</introspection-state-number>
+      <introspection-timestamp>2017-08-02.10:38:19.484</introspection-timestamp>
+    </schema>
+    <schema id="26" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="27" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="28" parent="1" name="pg_temp_1">
+      <object-id>11320</object-id>
+    </schema>
+    <schema id="29" parent="1" name="pg_toast_temp_1">
+      <object-id>11321</object-id>
+    </schema>
+    <schema id="30" parent="1" name="information_schema">
+      <object-id>11585</object-id>
+    </schema>
+    <sequence id="31" parent="25" name="sequencia">
+      <object-id>56630</object-id>
+      <state-number>7078</state-number>
+      <increment-by>50</increment-by>
+    </sequence>
+    <table id="32" parent="25" name="cliente">
+      <object-id>56612</object-id>
+      <state-number>7075</state-number>
+    </table>
+    <table id="33" parent="25" name="usuario">
+      <object-id>56620</object-id>
+      <state-number>7076</state-number>
+    </table>
+    <column id="34" parent="32" name="idcli">
+      <state-number>7075</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="35" parent="32" name="bairro">
+      <state-number>7075</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="36" parent="32" name="cep">
+      <state-number>7075</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="37" parent="32" name="datanasc">
+      <state-number>7075</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="38" parent="32" name="estado">
+      <state-number>7075</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="39" parent="32" name="logradouro">
+      <state-number>7075</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="40" parent="32" name="municipio">
+      <state-number>7075</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="41" parent="32" name="nomecliente">
+      <state-number>7075</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="42" parent="32" name="cliente_pkey">
+      <object-id>56618</object-id>
+      <columns>idcli</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="43" parent="32" name="cliente_pkey">
+      <object-id>56619</object-id>
+      <columns>idcli</columns>
+      <underlying-index>cliente_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="44" parent="33" name="idusuario">
+      <state-number>7076</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="45" parent="33" name="emailusuario">
+      <state-number>7076</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="46" parent="33" name="nomeusuario">
+      <state-number>7076</state-number>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="47" parent="33" name="senhausuario">
+      <state-number>7076</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="48" parent="33" name="usuario_pkey">
+      <object-id>56626</object-id>
+      <columns>idusuario</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="49" parent="33" name="uk_alnv7dg4gtmar2kxjgg57wn09">
+      <object-id>56628</object-id>
+      <columns>emailusuario</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="50" parent="33" name="usuario_pkey">
+      <object-id>56627</object-id>
+      <columns>idusuario</columns>
+      <underlying-index>usuario_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="51" parent="33" name="uk_alnv7dg4gtmar2kxjgg57wn09">
+      <object-id>56629</object-id>
+      <columns>emailusuario</columns>
+      <underlying-index>uk_alnv7dg4gtmar2kxjgg57wn09</underlying-index>
+    </key>
+  </database-model>
+</dataSource>
